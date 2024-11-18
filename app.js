@@ -9,7 +9,8 @@ while(chute != numeroSecreto) {
     chute = prompt('escolha um numero entre 1 e 30');
     // acerto
     if(chute == numeroSecreto){
-        alert('acertouuuuu ' + numeroSecreto + ' com ' + tentativas + ' tentativas ');
+        break;
+        
     } else {
         if(chute > numeroSecreto) {
             alert('o numero secreto é menor que ' + chute);
@@ -18,4 +19,9 @@ while(chute != numeroSecreto) {
             }
             tentativas++;
     }
+}
+if(tentativas > 1){
+    alert('acertouuuuu ' + numeroSecreto + ' com ' + tentativas + ' tentativas ');   
+} else {
+    alert('acertouuuuu ' + numeroSecreto + ' com ' + tentativas + ' tentativa ');
 }
