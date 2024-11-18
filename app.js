@@ -20,8 +20,5 @@ while(chute != numeroSecreto) {
             tentativas++;
     }
 }
-if(tentativas > 1){
-    alert('acertouuuuu ' + numeroSecreto + ' com ' + tentativas + ' tentativas ');   
-} else {
-    alert('acertouuuuu ' + numeroSecreto + ' com ' + tentativas + ' tentativa ');
-}
+let palavraTentativa = tentativas > 1 ? ' tentativas' : ' tentativa'
+alert('acertouuuuu ' + numeroSecreto + ' com ' + tentativas + palavraTentativa);
