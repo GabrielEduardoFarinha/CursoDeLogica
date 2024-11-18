@@ -1,7 +1,11 @@
 alert('bem vindo ao jogo');
-let numeroSecreto = 29;
+let numeroSecreto = 9;
+console.log(numeroSecreto)
 let chute = prompt('escolha um numero entre 1 e 30');
 
+// acerto
 if(numeroSecreto == chute){
-    console.log('acertouuuuu(29)');
+    alert('acertouuuuu' + numeroSecreto);
+} else {
+    alert('errouuu :(')
 }
